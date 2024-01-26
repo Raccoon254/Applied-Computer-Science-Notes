@@ -21,3 +21,25 @@ They attempt to alter system resources, or affect their operation. They include:
 - Modification, ie. altering the message, man in the middle
 - DOS ,etc.
 
+They are easier to detect but more difficult to prevent.
+
+## Terms
+**Vulnerability** is a weakness in a security system.
+
+**Threat** is a set of circumstances that has potential to cause loss or harm.
+
+**Controls** are ways to block a threat that tries to exploit one or more vulnerabilities.
+
+## Security Objectives
+
+1. **Confidentiality** - aims to protect data against unauthorized disclosure.
+2. **Integrity** - aims to detect unauthorized data modification and replay.
+3. **Availability** - ensures that systems work promptly and service is not denied to authorized users.
+
+## Impacts of Security Attacks
+
+An attack on a business can lead to:
+
+- Economic/Financial losses
+- Reputation damage
+- Legal consequences
