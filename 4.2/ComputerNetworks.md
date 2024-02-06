@@ -60,7 +60,7 @@ A message in its original form is called ***plaintext***/ ***ClearText*** and th
 
 The process of converting plaintext to ciphertext is called **encryption** and the reverse process is called **decryption**.
 
-![Alt text](image.png)
+<img src="images/image.png" alt="Alt text" width="" height="200">
 
 There are three types of algorithms used in cryptography:
 
