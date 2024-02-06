@@ -62,4 +62,21 @@ The process of converting plaintext to ciphertext is called **encryption** and t
 
 ![Alt text](image.png)
 
+There are three types of algorithms used in cryptography:
+
+- **Symmetric Key Algorithms** - Also called 
+***Secret Key, Single key encryption*** Uses a single key for both encryption and decryption. The encryption algorithm and decryption algorithm run in reverse order. 
+They use a single key for both encryption and decryption.
+
+Although this algorithm is fast, it suffers from the problem of key distribution.
+
+Examples include 
+DES(Data Encryption Standard) - 56-bit key, 
+ 3DES(Triple DES) - 168-bit key,
+ Extended DES - 128-bit key,
+ AES(Advanced Encryption Standard) uses variable key lengths of 128, 192, or 256 bits.
+
+- **Asymmetric Key Algorithms** - ***Public Key*** Uses two keys, a public key and a private key. The public key is used for encryption and the private key is used for decryption. Examples include RSA, DSA, etc.
+
+- **Hash Functions** - These are used to ensure data integrity. They take an input and produce a fixed-size string of bytes. Examples include MD5, SHA-1, etc.
 
