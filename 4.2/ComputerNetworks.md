@@ -75,6 +75,11 @@ DES(Data Encryption Standard) - 56-bit key,
  3DES(Triple DES) - 168-bit key,
  Extended DES - 128-bit key,
  AES(Advanced Encryption Standard) uses variable key lengths of 128, 192, or 256 bits.
+ CAST-128, Rivest Cipher, RC4, Blowfish, Twofish, KASUMI, Skipjack, Misty1, etc.
+
+## Assignment Operation of DES
+
+TODO: Add the assignment operation of DES
 
 - **Asymmetric Key Algorithms** - ***Public Key*** Uses two keys, a public key and a private key. The public key is used for encryption and the private key is used for decryption. Examples include RSA, DSA, etc.
 
