@@ -43,3 +43,23 @@ An attack on a business can lead to:
 - Economic/Financial losses
 - Reputation damage
 - Legal consequences
+
+## Security Controls
+
+**Technical Controls** 
+ - Cryptography
+ - Authentication and Access Control
+ - Firewalls
+
+# Cryptography 
+
+This is the process of concealing the contents of a message from all except those who know the key.
+The Key is a data string which when combined with the plain text message using an algorithm, produces output result called cipher text that is unreadable until decrypted.
+
+A message in its original form is called ***plaintext***/ ***ClearText*** and the encrypted message is called **ciphertext**, this is a message produced in disguise form.
+
+The process of converting plaintext to ciphertext is called **encryption** and the reverse process is called **decryption**.
+
+![Alt text](image.png)
+
+
