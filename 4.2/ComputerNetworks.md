@@ -85,3 +85,25 @@ TODO: Add the assignment operation of DES
 
 - **Hash Functions** - These are used to ensure data integrity. They take an input and produce a fixed-size string of bytes. Examples include MD5, SHA-1, etc.
 
+## Asymmetric Key Algorithms
+**Public key** is used for encryption and is distributed to anyone who wants to send a message to the owner of the private key.
+**Private key** is used for decryption and is kept secret by the owner.
+
+Every user has 2 keys, a public key and a private key. The public key is distributed to anyone who wants to send a message to the owner of the private key.
+
+The two keys are mathematically related but knowledge of one key does not determine the other.
+
+To encrypt a message and make it confidential, the sender encrypts the message using the recipient's public key. The receiver on receiving the message decrypts it using his private key.
+
+![Alt text](image.png)
+
+To encrypt a message with a goal of providing source authenticity, the sender encrypts the message with his private key. The receiver confirms the source of the message by decrypting it with the sender's public key. This provides non-repudiation.
+
+## Limitations of Asymmetric Key Algorithms
+- They are slower than symmetric key algorithms
+- Only used for small message encryption
+
+## Advantages of Asymmetric Key Algorithms
+- They solve the problem of key distribution
+- They are more secure than symmetric key algorithms
+- They provide confidentiality, authentication, and non-repudiation
