@@ -107,3 +107,69 @@ To encrypt a message with a goal of providing source authenticity, the sender en
 - They solve the problem of key distribution
 - They are more secure than symmetric key algorithms
 - They provide confidentiality, authentication, and non-repudiation
+
+Example of Asymmetric Key Algorithms include
+- RSA (Rivest-Shamir-Adleman)- uses variable size block and variable key length
+- Diffie Helman - used to do key exchange
+- DSA (Digital Signature Algorithm) - provides digital signature for authentication of messages
+- ElGamal - used for encryption and digital signature
+- ECC (Elliptic Curve Cryptography)
+
+## Hash Functions
+Also called message Digests or one way encryption. 
+
+They take a varied length of input and produce a fixed-size/length string of bytes called message digest or fingerprint.
+
+![Alt text](image-1.png)
+
+### Characteristics of Hash Functions
+- Takes an input of any length and produces a fixed-size output
+- Its infeasible to generate one hash value from two different inputs
+- Given one message its infeasible to find another message with the same hash value
+- Given the output of a hash function, it is infeasible to find the input that produced the output
+
+### Examples of Hash Functions
+- MD5 (Message Digest 5) - produces a 128-bit hash value
+- SHA-1 (Secure Hash Algorithm) - produces a 160-bit hash value
+- Haval - produces a 128, 160, 192, 224, or 256-bit hash value
+- Tiger - produces a 192-bit hash value
+- Whirlpool - produces a 512-bit hash value
+- RIPEMD - produces a 128, 160, 256, or 320-bit hash value
+
+## Applications the three types of algorithms
+- TODO
+
+# Network Security
+
+## Sniffing
+Allows an attacker to observe data on a network.
+
+## Spoofing
+Supports an attacker to masquerade or pretend to be another machine.(Impersonation)
+
+## Session Hijacking
+An attacker steals an existing session established between a source and a destination using both sniffing and spoofing.
+
+## Attacks
+ 
+### Password pilfering
+Method of stealing passwords from a system.
+- Guessing
+- Social Engineering - tricking people into revealing their passwords using social skills
+- Phishing 
+- Dictionary Attack
+    - Obtaining info of usernames and encrypted passwords
+    - Run encryption routine on each word in the dictionary names and dates
+    - Compare each output with the encrypted password from step 1
+    - If a match is found, the password is found
+
+### Password sniffing
+Password sniffers are programs that capture passwords from the network.
+
+## Password Protection
+- Use long passwords
+- Use a combination of letters, numbers, and special characters
+- Change passwords regularly
+- Avoid remote login software that don't encrypt passwords
+- Avoid entering information in any pop-up window and avoid clicking on links in suspicious emails
+- Avoid transmitting sensitive information over the internet
