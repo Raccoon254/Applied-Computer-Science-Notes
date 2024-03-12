@@ -173,3 +173,44 @@ Password sniffers are programs that capture passwords from the network.
 - Avoid remote login software that don't encrypt passwords
 - Avoid entering information in any pop-up window and avoid clicking on links in suspicious emails
 - Avoid transmitting sensitive information over the internet
+
+## Identity Spoofing Attacks
+
+- They allow attackers to impersonate a user without the user's  password.
+
+ie - Man in the middle attack, Message Replay, etc.
+
+### Man in the middle attack
+![Alt text](image-3.png)
+
+Defense measures include, encrypting and authenticating IP packets, 
+
+### Message Replay
+The attacker captures/intercepts a message, keeps it intact and retransmits it later 
+
+Defense measures include, Attach a random number to a message ie 'nonce' 
+
+Attach a timestamp to each message
+
+### Network Spoofing Attacks
+These type of attacks involves interfering with the IP address of the communicating agents. Through changing or disguising the source IP of a system,
+It helps the attacker avoid their actions being traced back to them and undermine applications that rely on IP addresses for authentication or filtering.
+NMAP, DSniff,Scapy, etc.
+
+**Examples of IP spoofing attacks**
+
+SYN flooding - Attacker fills the target computer SYN buffer with a large number of crafted SYN packets, making the target unable to establish connections with other computers.
+
+**4 steps**
+- Attacker sends a large number of crafted SYN packets to the target computer
+- The target computer is obliged to send an ACK/ acknowledgment to the crafted source IP in each SYN packet
+- Because the source IP is crafted and unreachable the target computer waits for a response that never comes and therefore the crafted SYN packet remains in the TCP buffer
+- Eventually, the buffer is completely occupied by the crafted SYN packets and the target computer is unable to establish connections with other computers.
+
+**Session Hijacking**
+Employs both sniffing and spoofing techniques, explained in the following steps:
+
+- Alice sends a SYN packet to Bob
+- The attacker intercepts the packet and uses SYN flooding to mute Bob so that Bob can't complete the three way handshake
+- The attacker predicts the correct TCP sequence number expected from Bob to Alice and crafts an ACK packet to Alice with the correct sequence number and Bob's IP address and sends it to Alice
+- Alice receives and verifies the ACK packet and sends an ACK packet to the attacker hence completing the three way handshake and establishing a TCP connection with the attacker instead of Bob

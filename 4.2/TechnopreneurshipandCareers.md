@@ -13,3 +13,4 @@
 - An entrepreneur can a person who buys goods at a certain price and sells them at a higher price, thereby making a profit.
 
 - The entrepreneur is viewed as a bearer of uncertainty and risk according to <ins>Richard Cantillon</ins>.
+
