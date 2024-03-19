@@ -214,3 +214,25 @@ Employs both sniffing and spoofing techniques, explained in the following steps:
 - The attacker intercepts the packet and uses SYN flooding to mute Bob so that Bob can't complete the three way handshake
 - The attacker predicts the correct TCP sequence number expected from Bob to Alice and crafts an ACK packet to Alice with the correct sequence number and Bob's IP address and sends it to Alice
 - Alice receives and verifies the ACK packet and sends an ACK packet to the attacker hence completing the three way handshake and establishing a TCP connection with the attacker instead of Bob
+
+### CHAP (Challenge-Handshake Authentication Protocol)
+Uses a password to modify a shared sequence between a client and a server but never allows the password in any form to go across a network
+
+When a user logs on to a server, the user is identified by their username that was sent across the network in plain text. The server generates a random number and sends it to the client. The client encrypts the random number(Challenge) using DES which comprises the response, the password is used as the DES key and the response is sent to the server and the server does the same calculation to ensure that the values match.
+
+### Certificate Based Authentication
+
+A digital certificate is a document that includes the 
+- Name of the subject
+- The subject public key
+- Serial number
+- Issue and Expiry date
+- Digital signature of the issuing authority
+
+i. When a user logs on and presents the certificate, the server verifies that the certificate is valid
+
+ii. The server sends a challenge to the user, which is a one time value 
+
+iii. The user signs with their private key and sends back to the user as a server response. 
+
+iv. The server then decrypts the response using the user's public key, if there is a match, then the user is authenticated.
